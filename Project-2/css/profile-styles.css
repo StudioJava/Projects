@@ -1,0 +1,315 @@
+@charset "UTF-8";
+/* CSS Document */
+html, 
+html * {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	font-family:Gotham, "Helvetica Neue", Helvetica, Arial, "sans-serif";
+}
+/*CLEAR FIX FOR ROWS*/
+.row:before, .row:after {
+	content: "";
+	display: table;
+}
+.row:after {
+	clear: both;
+}
+/**********************/
+
+
+body {
+	margin-right: auto;
+	margin-left: auto;
+	
+}
+h1  {
+	font-weight: 400;
+}
+h2 {
+	font-weight: 400;
+}
+h4 {
+    font-weight: 300;
+    text-transform: uppercase;	
+}
+header {
+	margin-bottom: 20px;
+	padding: 25px;
+	 background: #b92b27;  /* fallback for old browsers */
+   
+    background: linear-gradient(to right, #1565C0, #b92b27); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+img {
+	width: 100%;
+	max-width: 100%;
+	height: auto;
+	vertical-align: middle;
+	
+}
+/*images styling */
+.logo-img {
+	margin-left: auto;
+	margin-right: auto;
+	width: 150px;
+	display: block;
+	margin-bottom: 10px;
+}
+.card-logo{
+	width: 50px;
+}
+/*************************/
+.top-nav ul {
+	list-style-type: none;
+}
+.top-nav  a {
+	margin-top: 20px;
+	color: white;
+	text-decoration: none;
+	text-align: center;
+	display: block;
+	padding: 5px; /* padding should match the hover one as well otherwise will create a jump effect*/
+}
+.top-nav li a:hover {
+	
+    background: #E12B2B;
+    color: white !important;
+    padding: 5px;
+    border-radius: 5px;
+    box-shadow: 0 5px 8px -1px black;
+}
+.main-title {
+	padding: 25px;
+	margin: 5px;
+}
+.profile-image {
+	border-radius: 5px 5px 0px 0px;
+	margin-bottom: 25px;
+}
+.gradient-heading{
+    text-align: center;
+    padding: 25px;
+    letter-spacing: 5px;
+	
+
+
+}
+.gradient-heading h2 {
+	font-family: "Sonsie One", cursive;
+	color: #B30002;
+	  
+}
+.card {
+	padding: 25px;
+	border: 1px solid black;
+	border-radius: 10px;
+	margin: 5px;
+}
+.gallery-card-img {
+	margin-top: 25px;
+	border-radius: 5px;
+}
+.col {
+	width: 100%;
+}
+footer {
+	padding-top: 40px;
+	min-height: 80px;
+	text-align: center;
+	
+	color: white;
+	letter-spacing: 2px;
+	background: #0f0c29;  /* fallback for old browsers */
+
+background: linear-gradient(to right, #24243e, #302b63, #0f0c29); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+figure{
+	position: relative;
+}
+figcaption{
+    font-weight: 200;
+    margin-top: 25px;
+    padding-right: 5%;
+    padding-left: 5%;
+    padding-bottom: 2%;
+    position: absolute;
+    bottom: 0;
+    color: white;
+    text-align: center;
+    background-color: rgba(0,0,0,0.70);
+    width: 100%;
+    height: 40%;
+    padding-top: 14px;
+}
+.img-icon {
+	border:1px solid white;
+	border-radius: 50px;
+	position: absolute;
+	width: 35px;
+	top: 16px;
+	left: -16px;
+	z-index: 3;
+}
+.img-icon2 {
+	border:1px solid white;
+	border-radius: 50px;
+	position: absolute;
+	width: 35px;
+	top: 56px;
+	left: -16px;
+	z-index: 3;
+}
+.img-icon3 {
+	border:1px solid white;
+	border-radius: 50px;
+	position: absolute;
+	width: 35px;
+	top: 96px;
+	left: -16px;
+	z-index: 3;
+}
+
+.side-button {
+	
+	font-size: 30px;
+    color: #0B09DC;
+   padding-left: 10px;
+	padding-right: 5px;
+	border-radius: 5px 0px 0px 5px;
+    z-index: 1000;
+    position: fixed;
+    Bottom: 19%;
+    right: 1%;
+   
+}
+
+.contact-parag {
+	padding: 25px;
+	text-align: left;
+	line-height: 25px;
+}
+.contact-parag hr {
+	margin: 20px 15px;
+}
+footer i {
+	font-size: 24px;
+	color: white;
+	float: left;
+	padding-left: 15px;
+	margin-right: -10px;
+}
+.footer-nav ul  {
+		list-style-type: none;
+	}
+	.footer-nav ul li {
+		display: inline-block;
+		padding-right: 10px;
+		text-decoration: none;
+	}
+.footer-nav a {
+	color: white;
+	text-decoration: none;
+	text-align: center;
+	display: block;
+	padding: 5px;
+}
+.footer-nav a:hover {
+	 background: #E12B2B;
+    color: white !important;
+    padding: 5px;
+    border-radius: 5px;
+    box-shadow: 0 5px 8px -1px black;
+}
+
+/*Mobile view*/
+@media (max-width: 760px){
+	.footer-nav {
+		display: none;
+	}
+}
+
+
+
+/*Tablet view*/
+@media (min-width:768px){
+	body {
+		max-width: 778px;
+	}
+	
+	.top-nav ul li {
+		display: inline-block;
+	}
+	.top-nav ul {
+		text-align: center;
+	}
+	.col-med-one-half {
+		width: 50%;
+		
+	}
+	.col {
+		float: left;
+		padding: 0px 7px 14px;
+	}
+	.top-row {
+		margin-top: 50px;
+	}
+	#profile-col {
+		float: right;
+	}
+	.main-title {
+		padding-top: 20%;
+		line-height: 25px;
+	}
+	.side-button {
+		bottom: 95px;
+	}
+	.contact-parag {
+		margin-top: 25px;
+		margin-bottom: 25px;
+		margin-left: 10%;
+		margin-right: 10%;
+		border: 1px solid black;
+		border-radius: 5px;
+		box-shadow: 0 5px 5px -3px black;
+		
+	}
+	
+}
+
+
+@media (min-width: 1024px){
+	body{
+		max-width: 1100px;
+	}
+	.col-lg-one-forth {
+		width: 305%;
+	}
+	.logo-img {
+		float: left;
+	}
+	.top-nav {
+		float: right;
+	}
+	.contact-parag {
+		margin-top: 25px;
+		margin-bottom: 25px;
+		margin-left: 20%;
+		margin-right: 20%;
+		border: 1px solid black;
+		border-radius: 5px;
+		box-shadow: 0 5px 5px -3px black;
+		
+	}
+	.col-one-thrid {
+		width: 33%;
+	}
+	.side-button {
+		display: none;
+	}
+	
+	#arrow-up {
+		display: none;
+	}
+}
